@@ -54,6 +54,7 @@ module.exports = {
       provider: () => new HDWalletProvider(mnemonic, INFURA_URL),
       network_id: 4, // Rinkeby's network ID
       gas: 5500000,
+      timeoutBlocks: 200,  // # of blocks before a deployment times out  (minimum/default: 50)
     }
     // Another network with more advanced options...
     // advanced: {
